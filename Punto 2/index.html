@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón de Melón</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg cdm-navbar">
+        <div class="container">
+            <a class="navbar-brand cdm-brand" href="#">
+                🍈 Corazón de Melón
+            </a>
+            <button class="navbar-toggler cdm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="bi bi-heart-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link cdm-nav-link" href="#personajes">Personajes</a></li>
+                    <li class="nav-item"><a class="nav-link cdm-nav-link" href="#historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link cdm-nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link cdm-nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <section class="cdm-hero text-center">
+        <div class="container py-5">
+            <p class="cdm-subtitle-top">✦ Juego Otome ✦</p>
+            <h1 class="cdm-hero-title">Corazón de Melón</h1>
+            <p class="cdm-hero-desc">El amor llega de las formas más inesperadas.<br>¿Quién conquistará tu corazón?</p>
+            <a href="#personajes" class="btn cdm-btn-main mt-3">Conoce a los pretendientes</a>
+        </div>
+        <div class="cdm-petals" aria-hidden="true">
+            <span>🌸</span><span>🌸</span><span>🌸</span>
+            <span>🌸</span><span>🌸</span>
+        </div>
+    </section>
+
+
+    <section id="personajes" class="py-5">
+        <div class="container">
+            <h2 class="cdm-section-title text-center mb-4">Pretendientes</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card cdm-card h-100">
+                        <div class="cdm-card-img-wrap">
+                            <div class="cdm-avatar" style="background: linear-gradient(135deg,#f9c6d0,#fbe8ee);">
+                                <span>🌹</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title cdm-card-name">Nathaniel</h5>
+                            <p class="card-text cdm-card-role">El chico Inteligente</p>
+                            <p class="card-text cdm-card-desc">Siempre tan diligente y responsable. Parece tener solo interes en los estudios... y en tí</p>
+                        </div>
+                        <div class="card-footer cdm-card-footer text-center">
+                            <span class="cdm-badge-heart">❤ Nivel de afecto: Alto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card cdm-card h-100">
+                        <div class="cdm-card-img-wrap">
+                            <div class="cdm-avatar" style="background: linear-gradient(135deg,#c9e4f5,#e8f4fd);">
+                                <span>🌙</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title cdm-card-name">Castiel</h5>
+                            <p class="card-text cdm-card-role">El chico frío</p>
+                            <p class="card-text cdm-card-desc">Distante con todos. No sonríe fácilmente. Pero cuando lo hace… es solo para ti.</p>
+                        </div>
+                        <div class="card-footer cdm-card-footer text-center">
+                            <span class="cdm-badge-heart">❤ Nivel de afecto: Misterioso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card cdm-card h-100">
+                        <div class="cdm-card-img-wrap">
+                            <div class="cdm-avatar" style="background: linear-gradient(135deg,#d4f0c4,#edfae5);">
+                                <span>🌿</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title cdm-card-name">Kentin</h5>
+                            <p class="card-text cdm-card-role">El mejor amigo</p>
+                            <p class="card-text cdm-card-desc">Siempre a tu lado desde la infancia. Quizás ese amor de toda la vida es más profundo de lo que crees.</p>
+                        </div>
+                        <div class="card-footer cdm-card-footer text-center">
+                            <span class="cdm-badge-heart">❤ Nivel de afecto: Profundo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="historia" class="py-5 cdm-section-alt">
+        <div class="container">
+            <h2 class="cdm-section-title text-center mb-4">La Historia</h2>
+            <div class="accordion cdm-accordion" id="historiaAcc">
+
+                <div class="accordion-item cdm-acc-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button cdm-acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cap1">
+                            🌸 Capítulo 1 — El primer encuentro
+                        </button>
+                    </h2>
+                    <div id="cap1" class="accordion-collapse collapse show" data-bs-parent="#historiaAcc">
+                        <div class="accordion-body cdm-acc-body">
+                            Todo comienza el primer día de clases en el Instituto Hanazono. Eres nueva y, sin querer, chocas con el chico más popular de la escuela. Sus ojos se encuentran con los tuyos… y algo cambia para siempre.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item cdm-acc-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button cdm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cap2">
+                            🌙 Capítulo 2 — Secretos bajo la luna
+                        </button>
+                    </h2>
+                    <div id="cap2" class="accordion-collapse collapse" data-bs-parent="#historiaAcc">
+                        <div class="accordion-body cdm-acc-body">
+                            Durante el festival escolar descubres que cada pretendiente guarda un secreto. Las luces del farolillo iluminan confesiones que nadie esperaba hacer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item cdm-acc-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button cdm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cap3">
+                            💌 Capítulo 3 — La decisión del corazón
+                        </button>
+                    </h2>
+                    <div id="cap3" class="accordion-collapse collapse" data-bs-parent="#historiaAcc">
+                        <div class="accordion-body cdm-acc-body">
+                            El baile de graduación se acerca. Solo queda elegir a quién dedicarle ese último vals. Tu corazón ya lo sabe… ¿lo escucharás?
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container" style="max-width: 640px;">
+            <h2 class="cdm-section-title text-center mb-4">Medidor de Afinidad 💖</h2>
+
+            <p class="cdm-bar-label">Nathaniel <span class="float-end">82%</span></p>
+            <div class="progress cdm-progress mb-3">
+                <div class="progress-bar cdm-bar-rose" style="width: 82%"></div>
+            </div>
+
+            <p class="cdm-bar-label">Castiel <span class="float-end">65%</span></p>
+            <div class="progress cdm-progress mb-3">
+                <div class="progress-bar cdm-bar-blue" style="width: 65%"></div>
+            </div>
+
+            <p class="cdm-bar-label">Kentin <span class="float-end">74%</span></p>
+            <div class="progress cdm-progress mb-3">
+                <div class="progress-bar cdm-bar-green" style="width: 74%"></div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="py-4 cdm-section-alt">
+        <div class="container" style="max-width: 680px;">
+            <h2 class="cdm-section-title text-center mb-4">Logros Desbloqueados 🏅</h2>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                <span class="badge cdm-badge-pink">🌸 Primera cita</span>
+                <span class="badge cdm-badge-blue">🌙 Confesión nocturna</span>
+                <span class="badge cdm-badge-green">🌿 Amigos del alma</span>
+                <span class="badge cdm-badge-gold">⭐ Final feliz</span>
+                <span class="badge cdm-badge-pink">💌 Carta de amor</span>
+            </div>
+
+            <div class="alert cdm-alert-pink d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-heart-fill"></i>
+                <span>¡Nuevo evento desbloqueado! Visita el festival de cerezos con Kentin.</span>
+            </div>
+            <div class="alert cdm-alert-blue d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-moon-stars-fill"></i>
+                <span>Castiel te ha enviado un mensaje misterioso. ¿Responderás?</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="galeria" class="py-5 text-center">
+        <div class="container">
+            <h2 class="cdm-section-title mb-3">Galería & Extras ✨</h2>
+            <p class="cdm-hero-desc">Desbloquea escenas especiales a medida que aumentas tu afinidad.</p>
+            <button type="button" class="btn cdm-btn-main" data-bs-toggle="modal" data-bs-target="#escenaModal">
+                Ver escena especial 🌸
+            </button>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="escenaModal" tabindex="-1" aria-labelledby="escenaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content cdm-modal">
+                <div class="modal-header cdm-modal-header">
+                    <h5 class="modal-title cdm-modal-title" id="escenaModalLabel">🌸 Escena Especial — Hanami</h5>
+                    <button type="button" class="btn-close cdm-btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body cdm-modal-body">
+                    <p>Bajo los cerezos en flor, Nathaniel se acerca y, sin decir una palabra, coloca un pétalo en tu cabello.</p>
+                    <p class="cdm-modal-quote">"Cuando alguien mas te sonrie... me pongo celoso"</p>
+                </div>
+                <div class="modal-footer cdm-modal-footer">
+                    <button type="button" class="btn cdm-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn cdm-btn-main">Guardar escena 💖</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <footer id="contacto" class="cdm-footer text-center py-4">
+        <p class="mb-1">🍈 Corazón de Melón &copy; 2026</p>
+        <p class="cdm-footer-small">Hecho con amor y muchos pétalos</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

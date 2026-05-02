@@ -1,0 +1,214 @@
+
+
+:root {
+    --cdm-rose:    #e8718a;
+    --cdm-rose-lt: #fde8ee;
+    --cdm-rose-md: #f5b8c8;
+    --cdm-blue-lt: #e3f2fb;
+    --cdm-dark:    #4a3040;
+    --cdm-text:    #5c3d4e;
+    --cdm-muted:   #9a7080;
+    --cdm-white:   #fffbfd;
+    --cdm-bg:      #fff5f8;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: var(--cdm-bg);
+    color: var(--cdm-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cdm-header {
+    background: linear-gradient(160deg, #fde8ee 0%, #fff5f8 60%, #e3f2fb 100%);
+    border-bottom: 2px solid var(--cdm-rose-md);
+    padding: 48px 20px 40px;
+}
+
+.cdm-sup {
+    font-size: .78rem;
+    letter-spacing: .22em;
+    color: var(--cdm-muted);
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+}
+
+.cdm-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: var(--cdm-rose);
+    margin-bottom: .6rem;
+}
+
+.cdm-desc {
+    color: var(--cdm-muted);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+
+.cdm-carousel-section {
+    flex: 1;
+    padding: 48px 0 40px;
+}
+
+
+.cdm-carousel {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 36px rgba(232, 113, 138, .18);
+    border: 2px solid var(--cdm-rose-md);
+    position: relative;
+}
+
+.cdm-inner {
+    background-color: var(--cdm-rose-lt);
+}
+
+.cdm-slide-img {
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.cdm-placeholder {
+    min-height: 480px;
+    background: linear-gradient(135deg, #fde8ee 0%, #fce4f3 50%, #e3f2fb 100%);
+}
+
+
+.cdm-placeholder-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    color: var(--cdm-rose);
+    opacity: .55;
+    pointer-events: none;
+    white-space: nowrap;
+    /* Se oculta automáticamente si la imagen carga */
+}
+
+.cdm-slide-img:not([src=""]) ~ .cdm-placeholder-label {
+    display: none;
+}
+
+
+.cdm-caption {
+    bottom: 28px;
+    background: transparent;
+    text-align: left;
+    padding: 0 32px;
+}
+
+.cdm-caption-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,.55);
+    margin-bottom: .25rem;
+}
+
+.cdm-caption-text {
+    font-size: .85rem;
+    color: rgba(255,255,255,.88);
+    text-shadow: 0 1px 6px rgba(0,0,0,.5);
+    margin-bottom: 0;
+}
+
+
+.cdm-indicators {
+    bottom: 14px;
+}
+
+.cdm-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--cdm-rose-md);
+    border: none;
+    opacity: .6;
+    transition: opacity .2s, transform .2s;
+    margin: 0 4px;
+}
+
+.cdm-indicators button.active {
+    background-color: var(--cdm-rose);
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+
+.cdm-control {
+    width: 52px;
+    opacity: 1;
+}
+
+.cdm-control-icon {
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cdm-rose);
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px rgba(232,113,138,.25);
+    transition: background .2s, transform .2s;
+    backdrop-filter: blur(4px);
+}
+
+.cdm-control:hover .cdm-control-icon {
+    background-color: var(--cdm-rose);
+    color: #fff;
+    transform: scale(1.08);
+}
+
+
+.cdm-footer {
+    background-color: var(--cdm-dark);
+    color: var(--cdm-rose-md);
+    font-size: .875rem;
+}
+
+
+@media (max-width: 768px) {
+    .cdm-slide-img,
+    .cdm-placeholder {
+        height: 260px;
+        min-height: 260px;
+    }
+
+    .cdm-caption {
+        padding: 0 16px;
+        bottom: 18px;
+    }
+
+    .cdm-control { width: 36px; }
+
+    .cdm-control-icon {
+        width: 34px;
+        height: 34px;
+        font-size: .95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cdm-slide-img,
+    .cdm-placeholder {
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .cdm-caption-text { display: none; }
+}
